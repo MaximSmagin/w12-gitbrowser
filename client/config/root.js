@@ -23,6 +23,10 @@ const OnlyAnonymousRoute = ({ component: Component, ...rest }) => {
   return <Route {...rest} render={func} />
 }
 
+{
+  /* This is some text for test-branch */
+}
+
 const PrivateRoute = ({ component: Component, ...rest }) => {
   const user = useSelector((state) => state.auth.user)
   const token = useSelector((state) => state.token)
